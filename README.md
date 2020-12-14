@@ -1,0 +1,1 @@
+The Odin Project Hangman game. I used 5desk.txt to select a random word. In the beginning game ask you to choose a new game or load a saved game. If you enter n, you start a new game, if you enter s, you keep playing the last game saved. If you want to save the game enter "save".

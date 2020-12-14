@@ -1,6 +1,6 @@
 def start_game
-  puts "Would you like the start a new game or continue the last saved game. Press 'n' for new,
-    press 's' for saved game"
+  puts "Would you like the start a new game or continue the last saved game.
+   Press 'n' for new,press 's' for saved game"
   choice = gets.chomp.downcase
 
   if choice == "n"
@@ -90,7 +90,7 @@ def play
   game.counter.times do |index|
     puts "Please enter your word guess"
     guess = gets.chomp.downcase
-    if guess == "sa"
+    if guess == "save"
       File.open('game', 'w+') do |f|  
         Marshal.dump(game, f)  
       end 
